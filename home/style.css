@@ -1,0 +1,44 @@
+.header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.links a {
+    font-size: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.links a:hover {
+    color: var(--danger-color);
+}
+
+.upper-content {
+    display: flex;
+}
+
+.upper-content {
+    background-color: var(--primary-color);
+    /* padding-top: 15px; */
+    /* padding-bottom: 15px; */
+}
+
+.upper-content .upper-content-left {
+    width: 60%;
+}
+
+.upper-content .upper-content-right {
+    padding-top: 5px;
+    width: 40%;
+    border-radius: 50% 0 0 50%;
+    display: flex;
+    justify-content: end;
+    background-color: var(--secondary-color);
+}
+
+.upper-content .upper-content-right img {
+    width: 70%;
+}

@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #454372;
+    --secondary-color: #B8D4E3;
+    --token-color: #507255;
+    --warning-color: #C2D076;
+    --danger-color: #FF3864;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
