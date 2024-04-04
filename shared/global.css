@@ -1,13 +1,16 @@
 :root {
-    --primary-color: #454372;
-    --secondary-color: #B8D4E3;
-    --token-color: #507255;
-    --warning-color: #C2D076;
-    --danger-color: #FF3864;
+    --primary-color: rgb(69, 67, 114);
+    --secondary-color: rgb(184, 212, 227);
+    --secondary-color-4: rgb(184, 212, 227, 0.4);
+    --secondary-color-5: rgb(184, 212, 227, 0.5);
+    --token-color: rgb(80, 114, 85);
+    --warning-color: rgb(194, 208, 118);
+    --danger-color: rgb(255, 56, 100);
+    background-color: var(--primary-color);
 }
 
 .container {
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
 
