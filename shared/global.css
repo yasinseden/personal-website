@@ -6,7 +6,7 @@
     --token-color: rgb(80, 114, 85);
     --warning-color: rgb(194, 208, 118);
     --danger-color: rgb(255, 56, 100);
-    background-color: var(--primary-color);
+    background-color: var(--token-color);
 }
 
 .container {

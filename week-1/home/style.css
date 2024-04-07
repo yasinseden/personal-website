@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) { */
     .uppest-content {
         background-image: url(../assets/images/binary-background.jpg);
         background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     }
 
     .links a {
-        color: var(--token-color);
+        color: var(--secondary-color);
         font-weight: bold;
         font-size: 30px;
         margin-left: 15px;
@@ -205,7 +205,7 @@
         opacity: 0;
     }
 
-    .upper-content .upper-content-left .my-projects-icon .my-projects-content {
+    .upper-content .upper-content-left .my-projects-icon:hover .my-projects-content {
         z-index: 2;
         transition: opacity 1s, width 1s, height 1s;
         position: absolute;
@@ -301,4 +301,4 @@
         display: flex;
         align-items: center;
     }
-}
+/* } */
