@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../shared/reset.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+        }
+
+        .left-content {
+            width: 50%;
+        }
+
+        .right-content {
+            width: 50%;
+        }
+        
+        .form-field {
+            background-color: aquamarine;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .list-field {
+            background-color: rgb(67, 255, 192);
+            min-height: 300px;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            padding: 3px;
+            margin: 5px 0;
+        }
+
+        .head {
+            display: flex;
+            font-size: 20px;
+        }
+
+        .column {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .body {
+            display: flex;
+
+        }
+    </style>
+
+    <div class="container" id="container">
+        <div class="left-content">
+            <div class="form-field">
+                <div class="input-field">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName">
+                </div>
+                <div class="input-field">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName">
+                </div>
+                <div class="input-field">
+                    <label for="profession">Profession:</label>
+                    <input type="text" name="profession">
+                </div>
+                <div class="input-field">
+                    <button onclick="addEmployee()">Add Employee</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="list-field" id="list-field">
+                <div class="head">
+                    <div class="column">Name</div>
+                    <div class="column">Profession</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addEmployee() {
+            let firstNameDom = document.getElementsByName('firstName')
+            let lastNameDom = document.getElementsByName('lastName')
+            let professionDom = document.getElementsByName('profession')
+
+            let firstName = firstNameDom[0].value
+            let lastName = lastNameDom[0].value
+            let profession = professionDom[0].value
+
+            const listField = document.getElementById('list-field')
+            const body = document.createElement('div')
+            body.classList.add('body')
+            const nameContent = document.createElement('div')
+            nameContent.classList.add('column')
+            body.appendChild(nameContent)
+            
+            const professionContent = document.createElement('div')
+            professionContent.classList.add('column')
+            body.appendChild(professionContent)
+
+            listField.appendChild(body)
+
+            const fullName = `${firstName} ${lastName}`
+            nameContent.innerHTML= fullName
+            professionContent.innerHTML = profession
+            
+            firstNameDom[0].value = ''
+            lastNameDom[0].value = ''
+            professionDom[0].value = ''
+        }
+    </script>
+</body>
+</html>
